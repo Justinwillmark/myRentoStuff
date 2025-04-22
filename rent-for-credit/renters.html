@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Shop Renters | Rento - Get Credit from Your Rent</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Only include this for renters.html and landlords.html -->
+    <link rel="stylesheet" href="rentnland.css">
+</head>
+<body>
+    <header class="navbar-fixed bg-white">
+        <nav class="container-fluid navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="/">
+                    <i class="fas fa-home-alt me-2"></i>Rento
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link about-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link contact-btn" href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> Chat Now
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--<section class="hero-renter">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Get Up To 60% of Your Rent Back as Working Capital</h1>
+                    <p class="lead mb-4">Pay your shop rent through Rento and access immediate credit to grow your business.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-primary btn-lg pulse-btn" data-bs-toggle="modal" data-bs-target="#renterFormModal">
+                            <i class="fas fa-paper-plane me-2"></i> Join Waitlist
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#referLandlordModal">
+                            <i class="fas fa-user-plus me-2"></i> Refer Landlord
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1627385740/futurelabs/retailer_tbhwco.jpg" alt="Happy shop renter" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="hero-landlord">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Get Up To 60% of Your Rent Back as Working Capital</h1>
+                    <p class="lead mb-4">Pay your shop rent through Rento and access immediate credit to grow your business.</p>
+                    <!--<button class="btn btn-primary btn-lg pulse-btn" data-bs-toggle="modal" data-bs-target="#landlordFormModal">
+                        <i class="fas fa-store me-2"></i> Refer Landlord
+                    </button>-->
+                    <button class="btn btn-primary btn-lg pulse-btn" data-bs-toggle="modal" data-bs-target="#renterFormModal">
+                        <i class="fas fa-arrow-right me-2"></i> Refer Landlord
+                    </button>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1627385740/futurelabs/retailer_tbhwco.jpg" alt="Happy landlord" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>How Rento Helps Shop Renters</h2>
+                <p class="lead text-muted">Simple, fast access to credit when you need it most</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card h-100">
+                        <div class="icon-circle bg-primary-light">
+                            <i class="fas fa-money-bill-wave text-primary"></i>
+                        </div>
+                        <h4>Get Credit Fast</h4>
+                        <p>Access up to 60% of your paid rent as working capital within 24 hours</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card h-100">
+                        <div class="icon-circle bg-primary-light">
+                            <i class="fas fa-percent text-primary"></i>
+                        </div>
+                        <h4>Low 10% Interest</h4>
+                        <p>Only 10% flat interest rate with 60-day repayment period</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card h-100">
+                        <div class="icon-circle bg-primary-light">
+                            <i class="fas fa-sync-alt text-primary"></i>
+                        </div>
+                        <h4>Repeat Access</h4>
+                        <p>Multiple rounds of financing from month 1 to 6 post rent payment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="how-it-works py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1627385740/futurelabs/retailer_tbhwco.jpg" alt="How Rento works" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-center mb-4">How It Works</h2>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5>Pay Your Rent</h5>
+                            <p>Pay your annual shop rent through the Rento platform</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5>Request Credit</h5>
+                            <p>Choose when you need funds (earlier requests get more credit)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5>Get Funds</h5>
+                            <p>Receive up to 60% of your remaining rent value in your bank account</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h5>Repay & Repeat</h5>
+                            <p>Repay within 60 days and access more credit when needed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="how-it-works py-5">
+        <div class="container">
+            <!-- Centered Heading (New Row) -->
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="mb-4 d-inline-block px-4 py-2">How It Works</h2>
+                </div>
+            </div>
+    
+            <!-- Content (Image + Steps) -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://res.cloudinary.com/not-set/image/upload/v1627385740/futurelabs/retailer_tbhwco.jpg" alt="How Rento works" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5>Pay Your Rent</h5>
+                            <p>Pay your annual shop rent through the Rento platform</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5>Request Credit</h5>
+                            <p>Choose when you need funds (earlier requests get more credit)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5>Get Funds</h5>
+                            <p>Receive up to 60% of your remaining rent value in your bank account</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h5>Repay & Repeat</h5>
+                            <p>Repay within 60 days and access more credit when needed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Ready to Grow Your Business?</h2>
+            <p class="lead mb-4">Join thousands of Nigerian shop owners using Rento to access credit from their rent</p>
+            <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#renterFormModal">
+                <i class="fas fa-arrow-right me-2"></i> Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Renter Form Modal -->
+    <div class="modal fade" id="renterFormModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Join Rento Waitlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUd5kXqhu06WKLs0EsCre7bNp4Wxs0EwpsbM27Hge0S54hOw/viewform?usp=sf_link" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Refer Landlord Modal -->
+    <div class="modal fade" id="referLandlordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Refer Your Landlord</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="YOUR_LANDLORD_REFERRAL_GOOGLE_FORM_URL" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Rento</h5>
+                    <p>Empowering Nigerian small businesses through innovative rent-based credit solutions.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="renters.html">For Renters</a></li>
+                        <li><a href="landlords.html">For Landlords</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope me-2"></i> info@rento.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +234 708 931 9883</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rento. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

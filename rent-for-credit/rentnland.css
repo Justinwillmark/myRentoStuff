@@ -1,0 +1,186 @@
+/* ============================================
+   Renter & Landlord Pages
+   ============================================ */
+
+/* Hero Sections */
+.hero-renter, .hero-landlord {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e0f2fe 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Benefit Cards */
+.benefit-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* How It Works Steps */
+.step {
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    background: var(--primary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h5 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Bonus Structure */
+.bonus-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bonus-card {
+    flex: 1;
+    min-width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.bonus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.bonus-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.bonus-body {
+    background: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.bonus-percent {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero-renter, .hero-landlord {
+        padding: 4rem 0 2rem;
+        text-align: center;
+    }
+    
+    .benefit-card {
+        padding: 1.5rem;
+    }
+    
+    .bonus-cards {
+        flex-direction: column;
+    }
+    
+    .bonus-card {
+        width: 100%;
+    }
+}
+
+
+
+
+/* In rentnland.css - add these styles */
+
+/* For benefit cards with blue backgrounds */
+.benefit-card.bg-primary,
+.benefit-card.bg-primary h4,
+.benefit-card.bg-primary p {
+    color: var(--white-color) !important;
+}
+
+/* For bonus cards in landlords page */
+.bonus-header,
+.bonus-header h5 {
+    color: var(--white-color) !important;
+}
+
+/* For CTA sections */
+.cta.bg-primary,
+.cta.bg-primary h2,
+.cta.bg-primary p {
+    color: var(--white-color) !important;
+}
+
+
+/* Center heading on all screens */
+.how-it-works h2 {
+    text-align: center;
+    display: inline-block; /* Prevents full-width background */
+    margin: 0 auto; /* Ensures horizontal centering */
+}
+
+/* Ensure underline (if any) is centered */
+.how-it-works h2:after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Full-width background on mobile */
+@media (max-width: 767.98px) {
+    .how-it-works h2.bg-primary {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
